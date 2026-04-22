@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<!-- Ce site est codé de façon complètement artisanle et anarchique, de la grosse bidouille, du bon bricolage donc désolé à toi petit fouineur mais cela risque d'être compliqué de tout comprendre -->
+
+
+<html>
+
+  <head>
+    <link href="Style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Qu'est-ce qu'on fabrique&nbsp;? </title>
+    <meta name="description" content="Mémoire de fin d'études sous la direction de Bruno Tainturier • Ensci - Les Ateliers • 2022">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/png" href="Ressources/svg/favicon.svg">
+
+    <meta property="og:title" content="Qu'est-ce qu'on fabrique ?">
+    <meta property="og:image" content="https://questcequonfabrique.ensci.com/Ressources/img/GabaritBanniere.png">
+    <meta property="og:description" content="Mémoire de fin d'études sous la direction de Bruno Tainturier • Ensci - Les Ateliers • 2022">
+
+    <script type='text/javascript' >
+      let stateGlobal = ['off','off','off','off','off','off','off','off','off'];
+    </script>
+
+  </head>
+
+
+
+  <header class="header">
+
+          <!-- MENU -->
+
+
+          <input type="checkbox" id="menu">
+            <label for="menu">
+              <div class="hide-des">
+
+                <img id="boutonMenu" src="Ressources/svg/bars-solid.svg"></img> <!--#######################-->
+
+
+              </div>
+
+            </label>
+            <div id="rectangleMenu"></div>
+            <div id="full-page"></div>
+            <div id="menuPlayer" class="menu">
+              <div class="menuContainer">
+                  <ul class="bold-text">
+
+                    <li class="LienSommaire"><a href="index.html#WrapperSommaire">Sommaire</a></li>
+                    <li class="LienSommaire"><a href="index.html#preambule">Point de départ</a></li><br>
+                    <li class="LienSommaire"><a href="episodes.html">Les épisodes</a></li><br>
+                    <ul>
+                        <li class="LienSommaire"><a id="lien1" href="episodes.html#mu">Faire les bons choix grâce à <span class="insec">l’éco-conception</span></a></li>
+                        <li class="LienSommaire"><a id="lien2" href="episodes.html#renz">L’exemplarité écologique face aux lois du marché</a></li>
+                        <li class="LienSommaire"><a id="lien3" href="episodes.html#slean">L’indépendance par l’entreprenariat</a></li>
+                        <li class="LienSommaire"><a id="lien4" href="episodes.html#ateliertac">L’éco-conception «&#8239;artisanale&#8239;» par le réemploi</a></li>
+                        <li class="LienSommaire"><a id="lien5" href="episodes.html#ratp">Un projet d’entreprise qui a du sens</a></li>
+                        <li class="LienSommaire"><a id="lien6" href="episodes.html#commown">L’entreprise militante</a> </li>
+                        <li class="LienSommaire"><a id="lien7" href="episodes.html#camif">L’entreprise comme levier d’action</a></li>
+                        <li class="LienSommaire"><a id="lien8" href="episodes.html#lowtechlab">Repenser la société par la <span class="insec">low-tech</span></a></li><br>
+                        <li class="LienSommaire"><a id="lien9" href="episodes.html#episode9">Et maintenant&#8239;? Qu'est-ce qu'on fabrique&#8239;?</a></li><br>
+                    </ul>
+
+
+                    <li class="LienSommaire"><a href="ecoconception.html">Synthèse sur <span class="insec">l'éco-conception</span></a></li>
+                    <br>
+                    <li class="LienSommaire"><a href="ressources.html">Ressources</a></li>
+                    <br>
+                    <li class="LienSommaire"><a id="paddingPlayer" class="LastOfType" href="remerciements.html">Remerciements</a></li>
+                    <br>
+                </div>
+
+
+              </ul>
+            </div>
+
+
+      <span>
+        <h1 class="TitreMemoire"> Qu'est-ce qu'on fabrique&nbsp;? </h1>
+      </span>
+
+
+
+    </header>
+
+
+  <body>
+
+    <div id="WrapperGeneral">
+
+
+
+        <div class="WrapperBiblio" >
+          <!-- style="line-height: 1.35; margin-left: 2em; text-indent:-2em;"-->
+
+          <h1 class="sommaire"> Ressources </h1>
+          <div class="trait"></div><br>
+
+          <div class="blocBiblio" id="entretiens">
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio"> Entretiens et discussions </h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+              <br><br>
+
+              <div class="eltBiblio"> DELEPINE Florian, <a class="lienBiblio" target="_blank" href=" https://ateliertac.fr/">Atelier TAC</a>, Orléans, 08/12/2021.</div>
+              <br>
+              <div class="eltBiblio"> DESORMEAUX Nathanaël, <a class="lienBiblio" target="_blank" href="https://slean.com/">Slean</a>, Paris, 19/11/2021.</div>
+              <br>
+              <div class="eltBiblio"> DROUVILLE Pascal, <a class="lienBiblio" target="_blank" href="https://cristel.com/">Cristel</a>, visioconférence, 15/12/2021.</div>
+              <br>
+              <div class="eltBiblio"> JACQUILLAT Emery, <a class="lienBiblio" target="_blank" href="https://www.camif.fr/">Camif</a>, Paris, 11/11/2021.</div>
+              <br>
+              <div class="eltBiblio"> MATEUS Quentin, <a class="lienBiblio" target="_blank" href="https://lowtechlab.org/fr">Low-tech Lab</a>, Paris et visioconférence, 03/12/2021 et 27/12/2021.</div>
+              <br>
+              <div class="eltBiblio"> MICHELIN Fabien, <a class="lienBiblio" target="_blank" href="www.defense.gouv.fr/dga ">DGA</a>, Paris, 04/11/2021.</div>
+              <br>
+              <div class="eltBiblio"> MONTAGUT Adrien, <a class="lienBiblio" target="_blank" href="https://commown.coop /"> Commown</a>, visioconférence, 10/01/2022.</div>
+              <br>
+              <div class="eltBiblio"> PEJAUDIER Margot, <a class="lienBiblio" target="_blank" href="https://cooperativemu.com/">Coopérative Mu</a>, Paris, 10/01/2022.</div>
+              <br>
+              <div class="eltBiblio"> SOUAN Stéphanie, <a class="lienBiblio" target="_blank" href="https://ratpgroup.com/fr/">RATP</a>, visioconférence, 11/01/2022.</div>
+              <br>
+              <div class="eltBiblio"> SUPERNAT Thierry, <a class="lienBiblio" target="_blank" href=" https://www.renzgroup.fr/">Renz</a>, visioconférence, 25/10/2021.</div>
+
+              <br>
+              <br>
+              <br>
+
+              <div class="eltBiblio"> CUSSOL Marie, <a class="lienBiblio" target="_blank" href="https://www.eco-conception.fr/">Pôle éco-conception</a>, visioconférence, 22/10/2021.</div>
+              <br>
+              <div class="eltBiblio"> CLUZEL François, <a class="lienBiblio" target="_blank" href="http://www.lgi.centralesupelec.fr/">Laboratoire Génie Industriel - CentraleSupélec</a>, visioconférence, 03/11/2021.</div>
+              <br>
+              <div class="eltBiblio"> HURIEZ Thomas, <a class="lienBiblio" target="_blank" href="https://www.1083.fr/">1083</a>, Paris, 12/11/2021.</div>
+              <br>
+              <div class="eltBiblio"> TARDY David, ex-Décathlon, visioconférence, 03/01/2022.</div>
+              <br>
+          </div>
+
+          <div class="blocBiblio" id="sites">
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio"> Ressources en ligne </h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+
+              <br><br>
+
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href=" https://www.ademe.fr/">ADEME</a>.</div>
+                            <br>
+              <div class="eltBiblio"> «&nbsp;<a class="lienBiblio" target="_blank" href=" http://www.alliance-francaise-des-designers.org/charte-des-ecodesigners.html">Charte du design responsable</a>&nbsp;», Alliance Française des Designers.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href=" https://circulab.com/">Circulab </a> </div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://www.clubdeladurabilite.fr/">Club de la durabilité</a>.</div>
+                            <br>
+              <div class="eltBiblio"> «&nbsp;<a class="lienBiblio" target="_blank" href="https://campus.we-explore.org/?CommentFaireMieuxAvecMoinsPenserAutreme">Comment faire mieux avec moins ? Penser autrement avec les low-tech</a>&nbsp;», Low-tech Lab et Explore, 2021.</div>
+                            <br>
+              <div class="eltBiblio">DE DECKER Kris, <a class="lienBiblio" target="_blank" href="https://solar.lowtechmagazine.com/fr">Low-tech Magazine</a>.</div>
+                            <br>
+              <div class="eltBiblio">ECREMENT Victor, LANDIVAR Diego, <a class="lienBiblio" target="_blank" href="https://lafresquedurenoncement.xyz/">La fresque du renoncement</a>.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://www.halteobsolescence.org/">HOP – Halte à l’obsolescence programmée</a>.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://www.licoornes.coop/">Licoornes - Les coopératives pour la transition</a>.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://lowtechlab.org">Low-tech Lab</a>.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://www.eco-conception.fr">Pôle éco-conception</a>.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="http://pour-un-reveil-ecologique.org/fr/">Pour un réveil écologique</a>.</div>
+                            <br>
+              <div class="eltBiblio"> «&nbsp;<a class="lienBiblio" target="_blank" href="https://redirection-ecologique.21-22.com/">Qu’est-ce que la redirection écologique&nbsp;?</a>&nbsp;», Vingt et un vingt deux.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://www.sinonvirgule.fr/notre-ecologie">Sinon Virgule</a>,</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://cfsd.org.uk/resources/"> The Centre for Sustainable Design</a>, University for the Creative Arts, Farnham.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://transitions2050.ademe.fr/"> Transition(s) 2050</a>, ADEME, 2021.</div>
+                            <br>
+              <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://vous-netes-pas-seuls.org/">Vous n'êtes pas seul</a>.</div>
+                            <br>
+
+
+
+          </div>
+
+          <div class="blocBiblio" id="podcasts">
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio"> Podcasts et émissions de radio </h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+              <br><br>
+
+
+              <div class="eltBiblio">BIHOUIX Philippe, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=dmBRwFVQk_M&ab_channel=Thinkerview">Croissance et Effondrement</a>&nbsp;», <i>Thinkerview</i>, 11/01/2018, 1 h 48 min.</div>
+              <br>
+              <div class="eltBiblio">BIHOUIX Philippe, JANCOVICI Jean-Marc, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=NQkjhugvekI&ab_channel=Thinkerview">Le&nbsp;mensonge de la croissance verte&nbsp;?</a>&nbsp;», <i>Thinkerview</i>, 12/02/2019, 2 h 6 min.</div>
+              <br>
+              <div class="eltBiblio">JANCOVICI Jean-Marc, MOREL Laurent, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=dmBRwFVQk_M&ab_channel=Thinkerview">Éviter l’effondrement&nbsp;?</a>&nbsp;», <i>Thinkerview</i>, 09/02/2022, 2 h 48 min.</div>
+              <br>
+              <div class="eltBiblio">KELLER Arthur, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=OC7juZFIQPg&ab_channel=PlansB">Résilience&nbsp;: les points sur les&nbsp;i</a>&nbsp;», <i>Plan(s)&nbsp;B</i>, 30/10/2021, 39 min.</div>
+              <br>
+              <div class="eltBiblio">KRONLUND Sonia, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.franceculture.fr/emissions/les-pieds-sur-terre/demission">"Je n'arrivais pas à faire miens les intérêts de l'entreprise"&nbsp;: génération démission&nbsp;!</a>&nbsp;», <i>Les pieds sur Terre</i>, France Culture, 07/12/2021, 28 min.</div>
+              <br>
+              <div class="eltBiblio">KRONLUND Sonia, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.franceculture.fr/emissions/les-pieds-sur-terre/ingenieurs-deserteurs">Ingénieurs déserteurs</a>&nbsp;», <i>Les pieds sur Terre</i>, France Culture, 28/10/2021, 28 min.</div>
+              <br>
+              <div class="eltBiblio">MASSON-DELMOTTE Valérie, LARROUTUROU Pierre, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=9X4bV9fYkfs&ab_channel=Thinkerview">Le&nbsp;rapport qui annonce l'apocalypse&nbsp;?</a>&nbsp;», <i>Thinkerview</i>, 08/09/2021, 2 h 19 min.</div>
+              <br>
+              <div class="eltBiblio">MEDA Dominique, SUZMAN James, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.franceculture.fr/emissions/l-invite-e-des-matins/l-invite-des-matins-du-vendredi-08-octobre-2021">Une histoire de l'humanité au travail</a>&nbsp;», <i>L'Invité(e) des Matins</i>, France Culture, 08/10/2021, 43 min.</div>
+              <br>
+
+
+
+
+
+          </div>
+
+          <div class="blocBiblio" id="videos">
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio"> Ressources vidéo </h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+              <br><br>
+
+                <div class="eltBiblio">AV-RON Maya, COMINOTTI Mylène, COUDERT Marion, DANO Sixtine, «&nbsp;<a class="lienBiblio" target="_blank" href="https://vimeo.com/278174087">Thermostat 6</a>&nbsp;», Les Gobelins, L'Agence du Court Métrage, 2018.</div>
+                <br>
+                <div class="eltBiblio">CLEMENT Hugo, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.france.tv/france-5/sur-le-front/2956729-ou-finissent-nos-vetements.html">Où finissent nos vêtements&nbsp;?</a>&nbsp;», <i>Sur le front</i>, France Télévision, 2022, 52 min.</div>
+                <br>
+                <div class="eltBiblio">DETTMER Philipp, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/c/inanutshell">Kurzgesagt – In a Nutshell</a>&nbsp;», Munich.</div>
+                <br>
+                <div class="eltBiblio">DOILLON Jacques, GÉBÉ, «&nbsp;L’An 01&nbsp;», UZ Production, 1973.</div>
+                <br>
+                <div class="eltBiblio">GOETZ Julien, POULAIN Henri, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=XPt0ApGmfCc">La transition électrique&nbsp;: les doigts dans l'emprise</a>&nbsp;», <i>Datagueule</i>, 18/06/2020, 13 min.</div>
+                <br>
+                <div class="eltBiblio">LES PARASITES, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=vLa-HhBpgc4">L’effondrement</a>&nbsp;», Canal+, 2020.</div>
+                <br>
+                <div class="eltBiblio">LETOQUEUX Ronan, GANTIER Arnaud, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.youtube.com/watch?v=jqtpLHDeZiE">La nature a-t-elle un prix&nbsp;?</a>&nbsp;», <i>Le Vortex</i>, ARTE, 16/02/2022, 10 min.</div>
+                <br>
+
+
+          </div>
+
+          <div class="blocBiblio" id="ouvrages" >
+             <div class="wrapperTitreBiblio">
+               <h2 class="titreBiblio">Ouvrages</h2>
+               <div class="traitBiblio"></div><br>
+             </div>
+             <br><br>
+
+           <div class="eltBiblio">ATELIERS DE L’ANTEMONDE, <i>Bâtir Aussi</i>, Paris, Cambourakis, 2019.</div>
+           <br>
+           <div class="eltBiblio">BELLINI Béatrice, JANIN Marc, <i>Écoconception&nbsp;: état de l’art des outils disponibles</i>, Saint-Denis, Editions T.I., coll. «&nbsp;Techniques de l'ingénieur Environnement&nbsp;», 2019.</div>
+           <br>
+           <div class="eltBiblio">BERLINGEN Flore, <i>Recyclage&nbsp;: le grand enfumage, comment l'économie ciculaire est devenue l'alilibi du jetable</i>, Paris, Rue de l'échiquier, 2020.</div>
+           <br>
+           <div class="eltBiblio">BIHOUIX Philippe, <i>L'Âge des low tech - vers une civilisation techniquement soutenable</i>, Paris, Seuil, coll. «&nbsp;Anthropocène&nbsp;», 2014.</div>
+           <br>
+           <div class="eltBiblio">BLAIN Christophe, JANCOVICI Jean-Marc, <i>Le monde sans fin, miracle énergétique et dérive climatique</i>, Paris, Dargaud, 2021.</div>
+           <br>
+           <div class="eltBiblio">EDGERTON David, <i>Quoi de neuf&nbsp;? Du rôle des techniques dans l'histoire globale</i>, Paris, Seuil, coll. «&nbsp;L'Univers historique&nbsp;», 2013, traduction de JEANMOUGIN Christian.</div>
+           <br>
+           <div class="eltBiblio">HURIEZ Thomas, <i>Re-Made en France&nbsp;: 1 million d'emplois près de chez nous en produisant et consommant local</i>, Dunod, 2019.</div>
+           <br>
+           <div class="eltBiblio">LEYMONERIE Claire, <i>Le temps des objets&nbsp;- Une histoire du design industriel en France (1945-1980)</i>, Saint-Étienne, Cité du design, 2016.</div>
+           <br>
+           <div class="eltBiblio">PACQUOT Thierry, ILLICH Ivan, <i>Ivan Illich et la société conviviale</i>, le passager clandestin, coll. «&nbsp;précurseur·ses de la décroissance&nbsp;», 2020.</div>
+           <br>
+
+          </div>
+
+          <div class="blocBiblio" id="articles">
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio">Revues et articles</h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+              <br><br>
+
+            <div class="eltBiblio">«&nbsp;L'avenir sera low-tech&nbsp;», <i>Socialter</i>, Hors-série n°6, mai 2019.</div>
+            <br>
+            <div class="eltBiblio">«&nbsp;Quel écolo êtes-vous&nbsp;? &nbsp;», <i>Le 1</i>, 26/06/2019.</div>
+            <br>
+            <div class="eltBiblio">DUBREUIL Maroussia, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.lemonde.fr/m-perso/article/2022/03/05/tous-ecolo-imparfaits-nos-petits-arrangements-avec-la-culpabilite-ecologique_6116228_4497916.html">Tous écolo-imparfaits ! Nos petits arrangements avec la culpabilité écologique</a>&nbsp;», <i>Le Monde</i>, 05/03/2022.</div>
+            <br>
+            <div class="eltBiblio">MADELINE Béatrice, «&nbsp;<a class="lienBiblio" target="_blank" href="https://www.lemonde.fr/economie/article/2021/11/01/quand-usine-n-est-plus-un-gros-mot-en-france-la-lente-resurrection-de-l-industrie_6100529_3234.html">Quand "usine" n’est plus un "gros mot"&nbsp;: en France, la lente résurrection de l’industrie</a>&nbsp;», <i>Le Monde</i>, 01/11/2021.</div>
+            <br>
+            <div class="eltBiblio">PEZZA Sébastien, VALIDE Lou «&nbsp;<a class="lienBiblio" target="_blank" href="http://pour-un-reveil-ecologique.org/fr/articles/10-points-cles-giec-ar6-wg3/">10 POINTS CLÉS (GIEC, AR6 WG3)</a>&nbsp;», <i>Pour un réveil écologique</i>, 11/04/2022.</div>
+            <br>
+            <div class="eltBiblio">WAGNER Thomas, «&nbsp;<a class="lienBiblio" target="_blank" href="https://bonpote.com/synthese-et-analyse-du-nouveau-rapport-du-giec/">Synthèse et analyse du nouveau rapport du GIEC</a>&nbsp;», <i>Bon Pote</i>, 12/08/2021.</div>
+            <br>
+
+          </div>
+
+          <div class="blocBiblio" id="memoires" >
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio">Mémoires</h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+              <br><br>
+            <div class="eltBiblio">CHAPUIS Camille, <i>Espèce d'usine</i>, Mémoire de fin d’étude sous la direction de Lionel Dax, Ensci - Les Ateliers, 2020.</div>
+            <br>
+            <div class="eltBiblio">MORIN Paul, <i><a class="lienBiblio" target="_blank" href="http://findumonde-design.com">A l'approche de la fin du monde, celle du design</i></a>, Mémoire de fin d’étude sous la direction de Franck Burbage, Ensci - Les Ateliers, 2016.</div>
+            <br>
+            <div class="eltBiblio">SOUAN Stéphanie, <i>Economie circulaire en pratique : explorer – concevoir</i>, Mémoire de fin d’étude sous la direction de Cloé Pitiot, Ensci - Les Ateliers, 2014.</div>
+            <br>
+            <div class="eltBiblio">VALOT Andréane, <i><a class="lienBiblio" target="_blank" href="https://www.youtube.com/channel/UCtHMTgbW4V51BvDgzHrmlEw">Questions de pratiques : Saison 1 – Design(s) en Transitions</i></a>, Mémoire de fin d’étude sous la direction de Elena Tosi Brandi, Ensci - Les Ateliers, 2021.</div>
+            <br>
+
+
+          </div>
+
+          <div class="blocBiblio" id="conferences" >
+            <div class="wrapperTitreBiblio">
+              <h2 class="titreBiblio">Conférences et expositions</h2>
+              <div class="traitBiblio"></div><br>
+            </div>
+            <br><br>
+
+            <div class="eltBiblio">HOP, «&nbsp;Afterwork du Club de la Durabilité&nbsp;», Paris, 30/11/2021.</div>
+            <br>
+            <div class="eltBiblio">MAKESENSE, GOBI, «&nbsp;Le changement par l'objet&nbsp;: éco-conception comment diminuer l'impact des biens de consommation&nbsp;?&nbsp;», visioconférence, 25/01/2022.</div>
+            <br>
+            <div class="eltBiblio">MOORE Gerald, DAGGETT Cara, SUZMAN James, HESTER Helen, «&nbsp;<a class="lienBiblio" target="_blank" href="https://enmi-conf.org/wp/enmi21/session-1/">La Société Intermittente</a>&nbsp;», <i>Les entretiens du nouveau monde industriel</i>, Paris, Centre Pompidou, 29/11/2021.</div>
+            <br>
+            <div class="eltBiblio">UNIVERSCIENCES, «&nbsp;Renaissances&nbsp;», Cité des sciences et de l'industrie, Paris, du 06/07/2021 au 06/03/2022.</div>
+            <br>
+          </div>
+
+          <div class="blocBiblio" id="enseignements" >
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio">Enseignements</h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+              <br><br>
+
+            <div class="eltBiblio">TAINTURIER Bruno, <i>Analyse de produits & reconception</i>, cours hebdomadaire, Ensci - Les Ateliers, 2021.
+              </div>
+              <br>
+              <div style="font-size: smaller; padding-left:20px">Avec la participation de : Charline Kernin, <i>groupe Renault</i>; Alain Pautrot et Eric Chevalier,<i> groupe SEB</i>; Stéphane Thirouin, <i>Williwaw</i>; Laurianne Vagharchakian, <i>Direction Interministérielle de la Transformation Publique (DITP)</i>; Elsa Lomont et Florent Preguesuelo, <i>label LONGTIME</i>.
+              </div>
+
+            <br>
+
+          </div>
+
+          <div class="blocBiblio" id="normes">
+            <div class="wrapperTitreBiblio">
+              <h2 class="titreBiblio"> Rapports et normes </h2>
+              <div class="traitBiblio"></div><br>
+            </div>
+            <br><br>
+
+
+
+                        <div class="eltBiblio"> BOLO Philippe, PRÉVILLE Angèle, <i><a class="lienBiblio" target="_blank" href="https://www.senat.fr/rap/r20-217/r20-217_mono.html#fn186">Pollution plastique&nbsp;: une bombe à retardement ?</a></i>, Office parlementaire d'évaluation des choix scientifiques et technologiques, Rapport n°217, Paris, 2020.</div>
+                        <br>
+                        <div class="eltBiblio"> CONSEIL NATIONAL DE LA CONSOMMATION, <i><a class="lienBiblio" target="_blank" href="https://www.economie.gouv.fr/files/files/directions_services/cnc/Guide_allegat_environ_fr_2014.pdf">Guide pratique des allégations environnementales à l’usage des professionnels et des consommateurs</a></i>, Ministère de l'économie, Paris, 2014.</div>
+                        <br>
+                        <div class="eltBiblio"> <i><a class="lienBiblio" target="_blank" href="https://www.eco-conception.fr/data/sources/users/2242/guide-evaluation-eco-conceptionvfhd.pdf">Guide de l’évaluation AFAQ Éco-conception</a></i>, AFNOR, La Plaine Saint-Denis, 2019.</div>
+                        <br>
+                        <div class="eltBiblio"> <i><a class="lienBiblio" target="_blank" href="https://presse.ademe.fr/wp-content/uploads/2018/09/DP-Face-cache%CC%81e-des-biens-de%CC%81quipement-Septembre-2018.pdf">La face cachée des objets&nbsp;: vers une consommation responsable</a></i>, ADEME, 2018.</div>
+                        <br>
+
+                        <div class="eltBiblio"><i><a class="lienBiblio" target="_blank" href="https://www.halteobsolescence.org/wp-content/uploads/2022/02/Rapport-indice-de-reparabilite.pdf">The French repairability index - A first assessment – one year after its implementation</a></i>, HOP, Paris, 2022.</div>
+                        <br>
+
+
+                        <div class="eltBiblio"> <i>NF EN ISO 14006 - Lignes directrices pour intégrer l'éco-conception</i>, AFNOR, La Plaine Saint-Denis, 2020.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN ISO 14020 - Étiquettes et déclarations environnementales - Principes généraux</i>, AFNOR, La Plaine Saint-Denis, 2002.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN ISO 14024 - Labels et déclarations environnementaux — Délivrance du label environnemental de type I — Principes et procédures</i>, AFNOR, La Plaine Saint-Denis, 2018.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN ISO 14040  — Analyse du cycle de vie — Principes et cadre</i>, AFNOR, La Plaine Saint-Denis, 2006.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN ISO 14044 — Analyse du cycle de vie — Exigences et lignes directrices</i>, AFNOR, La Plaine Saint-Denis, 2006.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN ISO 14046 — Empreinte eau — Principes, exigences et lignes directrices</i>, AFNOR, La Plaine Saint-Denis, 2016.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN ISO 14067 — Empreinte carbone des produits — Exigences et lignes directrices pour la quantification</i>, AFNOR, La Plaine Saint-Denis, 2018.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN 45552 - Méthode générale pour l'évaluation de la durabilité des produits liés à l'énergie</i>, AFNOR, La Plaine Saint-Denis, 2020.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN 45554 - Méthodes générales pour l'évaluation de la capacité de réparation, réutilisation et amélioration des produits liés à l'énergie</i>, AFNOR, La Plaine Saint-Denis, 2020.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>ISO 14062 - Intégration des aspects environnementaux dans la conception et le développement de produit</i>, AFNOR, La Plaine Saint-Denis, 2013.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF EN IEC 62430 - Écoconception (ECO) - Principes, exigences</i>, AFNOR, La Plaine Saint-Denis, 2019.</div>
+                        <br>
+                        <div class="eltBiblio"> <i>NF X30-264 - Aide à la mise en place d'une démarche d'éco-conception</i>, AFNOR, La Plaine Saint-Denis, 2013.</div>
+                        <br>
+
+
+          </div>
+
+          <div class="blocBiblio" id="definitions">
+              <div class="wrapperTitreBiblio">
+                <h2 class="titreBiblio"> Définitions </h2>
+                <div class="traitBiblio"></div><br>
+              </div>
+
+              <br><br>
+
+              <div class="eltBiblio"> <a class="lienBiblio" target="_blank" href="https://bilans-ges.ademe.fr/">Centre de ressources sur les bilans de gaz à effet de serre</a>, ADEME.</div>
+              <br>
+              <div class="eltBiblio"> LAROUSSE en ligne.</div>
+              <br>
+              <div class="eltBiblio"> Wikipédia, <i>l'encyclopédie libre</i>.</div>
+              <br>
+
+          </div>
+
+        </div>
+      </div>
+    <footer>
+
+              <div>©&nbsp;Donatien Lenoir</div>
+              <div> • </div>
+              <div>2022</div>
+              <div> • </div>
+              <div> <a class="lienFooter" href="https://www.ensci.com/" target="_blank">Ensci&nbsp;-&nbsp;Les&nbsp;Ateliers</a></div>
+
+          </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="OmbreSticky.js"></script>
+    <script src="GestionDuMenu.js"></script>
+
+  </body>
+
+</html>

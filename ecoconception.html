@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<!-- Ce site est codé de façon complètement artisanle et anarchique, de la grosse bidouille, du bon bricolage donc désolé à toi petit fouineur mais cela risque d'être compliqué de tout comprendre -->
+
+
+<html>
+
+  <head>
+    <link href="Style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Qu'est-ce qu'on fabrique ? </title>
+    <meta name="description" content="Mémoire de fin d'études sous la direction de Bruno Tainturier • Ensci - Les Ateliers • 2022">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/png" href="Ressources/svg/favicon.svg">
+
+    <meta property="og:title" content="Qu'est-ce qu'on fabrique ?">
+    <meta property="og:image" content="https://questcequonfabrique.ensci.com/Ressources/img/GabaritBanniere.png">
+    <meta property="og:description" content="Mémoire de fin d'études sous la direction de Bruno Tainturier • Ensci - Les Ateliers • 2022">
+
+    <script type='text/javascript' >
+      let stateGlobal = ['off','off','off','off','off','off','off','off','off'];
+    </script>
+
+  </head>
+
+
+
+  <header class="header">
+
+          <!-- MENU -->
+
+
+          <input type="checkbox" id="menu">
+            <label for="menu">
+              <div class="hide-des">
+
+                <img id="boutonMenu" src="Ressources/svg/bars-solid.svg"></img> <!--#######################-->
+
+
+              </div>
+
+            </label>
+            <div id="rectangleMenu"></div>
+            <div id="full-page"></div>
+            <div id="menuPlayer" class="menu">
+              <div class="menuContainer">
+                  <ul class="bold-text">
+
+                    <li class="LienSommaire"><a href="index.html#WrapperSommaire">Sommaire</a></li>
+                    <li class="LienSommaire"><a href="index.html#preambule">Point de départ</a></li><br>
+                    <li class="LienSommaire"><a href="episodes.html">Les épisodes</a></li><br>
+                    <ul>
+                        <li class="LienSommaire"><a id="lien1" href="episodes.html#mu">Faire les bons choix grâce à <span class="insec">l’éco-conception</span></a></li>
+                        <li class="LienSommaire"><a id="lien2" href="episodes.html#renz">L’exemplarité écologique face aux lois du marché</a></li>
+                        <li class="LienSommaire"><a id="lien3" href="episodes.html#slean">L’indépendance par l’entreprenariat</a></li>
+                        <li class="LienSommaire"><a id="lien4" href="episodes.html#ateliertac">L’éco-conception «&#8239;artisanale&#8239;» par le réemploi</a></li>
+                        <li class="LienSommaire"><a id="lien5" href="episodes.html#ratp">Un projet d’entreprise qui a du sens</a></li>
+                        <li class="LienSommaire"><a id="lien6" href="episodes.html#commown">L’entreprise militante</a> </li>
+                        <li class="LienSommaire"><a id="lien7" href="episodes.html#camif">L’entreprise comme levier d’action</a></li>
+                        <li class="LienSommaire"><a id="lien8" href="episodes.html#lowtechlab">Repenser la société par la <span class="insec">low-tech</span></a></li><br>
+                        <li class="LienSommaire"><a id="lien9" href="episodes.html#episode9">Et maintenant&#8239;? Qu'est-ce qu'on fabrique&#8239;?</a></li><br>
+                    </ul>
+
+
+                    <li class="LienSommaire"><a href="ecoconception.html">Synthèse sur <span class="insec">l'éco-conception</span></a></li>
+                    <br>
+                    <li class="LienSommaire"><a href="ressources.html">Ressources</a></li>
+                    <br>
+                    <li class="LienSommaire"><a id="paddingPlayer" class="LastOfType" href="remerciements.html">Remerciements</a></li>
+                    <br>
+                </div>
+
+
+              </ul>
+            </div>
+
+
+      <span>
+        <h1 class="TitreMemoire"> Qu'est-ce qu'on fabrique&nbsp;? </h1>
+      </span>
+
+
+
+    </header>
+
+
+  <body>
+
+
+
+      <div id="WrapperGeneral">
+        <div class="WrapperDoc">
+          <h1> Un synthèse sur <span class="insec">l’éco-conception</span> et ses outils </h1>
+          <div class="trait"></div>
+          <br><br><br>
+          <p>
+
+            <span class="definition">Éco-conception :</span> <i>n.f.</i> approche méthodique, qui prend en considération les aspects environnementaux du processus de conception et développement dans le but de réduire les impacts environnementaux négatifs tout au long du cycle de vie d’un produit.
+            <span class="source"> ISO 14006 </span>
+          </p>
+          <br><br>
+
+
+          <p>
+            En tant qu’approche produit, <b>les méthodes d’éco-conception intègrent des impacts externes à l’entreprise.</b> Elle se distingue ainsi des bilans d’impacts comme les audits énergétiques ou les bilans carbone qui se restreignent généralement au périmètre de l’entreprise.
+          </p>
+          <br><br>
+
+        </div>
+
+        <input type="checkbox" id="checkboxImg1">
+
+          <label for="checkboxImg1">
+                <img class="imgEcoC" src="Ressources/ecoconception/EconomieCirculaire.png"></img>
+          </label>
+
+          <div class="ImgEcoWrap1">
+                  <img class="ImgEcoCzoom" src="Ressources/ecoconception/EconomieCirculaire.png" >
+          </div>
+
+
+
+        <div class="WrapperDoc">
+          <p>
+            <br><br>
+            Dans la vision française du développement durable, portée notamment par l’ADEME, l’éco-conception s’inscrit comme l’un des 7 piliers de l’économie circulaire.
+            <br><br>
+            Si dans sa mise en place, l’éco-conception est bien du ressort des acteurs économiques, elle devra, dans une logique «&#8239;cycle de vie&#8239;», agir sur l’ensemble des thématiques pour être pertinente.
+            <br><br>
+            Les démarches et les outils de l’éco-conception sont très cadrés, néanmoins, définir un objet comme <span class="insec">éco-conçu</span> est davantage problématique. <b>Un produit ou un service ne peut être intrinsèquement éco-conçu.</b> Il l’est relativement à un autre, à un instant donné, dans un référentiel d’hypothèses donné. Il est donc à voir davantage comme un produit ayant bénéficié d’une évaluation puis d’une réduction de son impact.
+            <br>
+            <br>
+            <br>
+
+
+          </p>
+        </div>
+
+        <div class="WrapperDoc">
+          <h2 class="titreBiblio"> Les outils permettant de pratiquer l’éco-conception </h2>
+          <div class="traitBiblio"> </div>
+
+        </div>
+
+        <div class="titreVerticalMediaQ"> Quantitatif </div>
+
+        <div class="wrapperEcoC">
+
+          <div class="titreVertical"> Quantitatif </div>
+
+          <div class="WrapperOutilsEcoC">
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC"> ACV <br>simplifiée multicritère</h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC multic"> multicritère</div>
+                  <div class="tagOEC multip"> multiphase </div>
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+                  • Plus accessible que l'ACV complète <br>
+                  • Peut être intégrée plus en amont dans un cycle de conception <br>
+                  • Très répandu <br>
+                  <br>
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+                  • Moins précis <br>
+                  • Données non exhaustives
+                  <br>
+
+                </div>
+
+              </div>
+              <p class="dOEC">
+                Méthode similaire à l’ACV avec modifications variables selon la méthode ‌: le nombre de critères et d’étapes considérés, le type et la précision des données, la finesse de la modélisation.
+                Le Bilan Produit développé par l’ADEME est un exemple gratuit d’ACV simplifiée.
+                              </p>
+            </div>
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC"> Approche <br>monocritère </h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC monoc"> monocritère</div>
+                  <div class="tagOEC multip"> multiphase </div>
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+
+                  • Outil normalisé (eau, carbone) <br>
+                  • Résultats impactants<br>
+                  • Utilisé dans les études d’ensemble de consommation d’un pays.<br><br>
+
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+
+                  • Pertinence réduite pour certains produits <br>
+                  • Peut occulter les transferts d’impacts entre critères environnementaux<br>
+                </div>
+
+              </div>
+              <p class="dOEC">
+                Analyse sur le cycle de vie en ne considérant ou en se rapportant à un seul critère : carbone (ISO&nbsp;14064), eau (ISO&nbsp;14046) et matières.
+                Cet outil permet d’illustrer de manière saisissante certains impact&nbsp;: 10 000L d’eau pour produire un jean, 70kg de matières et 70&nbsp;métaux différents pour un smartphone d’en moyenne 120g.
+                              </p>
+            </div>
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC"> ACV <br> complète</h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC multic"> multicritère</div>
+                  <div class="tagOEC multip"> multiphase </div>
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+
+                  • Outil normalisé <br>
+                  • Très répandu <br>
+                  • Impose une connaissance du produit <br><br>
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+
+                  • Exigent en ressources (humaines, temporelles et financières) <br>
+                  • Données non exhaustives <br>
+                </div>
+
+              </div>
+              <p class="dOEC">
+                Étude des impacts d’un produit sur l’ensemble de son cycle de vie grâce à une modélisation des différents flux de matière et d’énergie.
+                L’unité fonctionnelle (ex stylo : écrire sur une distance de 90km) permet de comparer plusieurs produits entre eux.
+                L’ACV est uniquement un calculateur d’impact et ne fournit pas de solution ou conseil concernant la reconception du produit.
+                              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="titreVerticalMediaQ"> Qualitatif </div>
+
+        <div class="wrapperEcoC">
+
+          <div class="titreVertical"> Qualitatif </div>
+
+          <div class="WrapperOutilsEcoC qualitatif">
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC"> Approche <br>matricielle</h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC multic"> multicritère</div>
+                  <div class="tagOEC multip"> multiphase </div>
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+                  • Méthodes guidées qui nécessitent peu de connaissances environnmentales <br>
+                  • Peut être intégrée plus en amont dans un cycle de conception <br>
+                  • Peut être réalisé rapidement <br>
+                  <br>
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+                  • Méthodes génériques et non particularisées <br>
+                  • Peut manquer de précision.
+                  <br>
+
+                </div>
+
+              </div>
+              <p class="dOEC">
+                L’évaluation de la solution s'effectue en remplissant des grilles prédéfinies correspondantes à des critères environnementaux et des phases spécifiés. L’examen des différents curseurs permet d’obtenir par des calculs systématiques une appréciation environnementale du produit ou service.
+              </p>
+            </div>
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC"> ESQV <br><span style="font-size: smaller"> Evaluation simplifiée et qualitative du cycle de vie </span> </h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC monoc"> monocritère</div>
+                  <div class="tagOEC multip"> multiphase </div>
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+
+                  • Peut faire office d'introduction à <span class="insec">l'éco-conception.</span><br>
+                  • Permet d'itendifier facilement les étapes défavorables du cycle de vie.<br>
+                  • Peut être intégrée plus en amont dans un cycle de conception. <br>
+                <br>
+
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+
+                  • L'étude peut rester superficielle. <br>
+
+                </div>
+
+              </div>
+              <p class="dOEC">
+                Etude simplifiée sur l’ensemble du cycle de vie en se focalisant sur un nombre restreint de critères. Ce travail peut permettre d’identifier facilement les points de vigilance du cycle de vie en vue d’une étude approfondie sur les étapes défavorables.
+              </p>
+            </div>
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC">Guidelines</h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC variable">variable</div>
+
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+
+                  • Ne nécessite aucune connaissance environnmentales préalable <br>
+                  • Peut facilement être pris en main <br>
+                  <br>
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+
+                  • Recommandations génériques et non particularisées <br>
+                  • La prise en compte peut-être superficielle <br>
+                  • Ne permet pas d'écarter systématiquement d'éventuels effets rebonds <br>
+
+                </div>
+
+              </div>
+              <p class="dOEC">
+                Listes de bonnes pratiques et recommandation à suivre lors de la conception d’un produit ou d’un service. Certaines entreprises intègrent ces recommandations à leur processus de conception.
+                              </p>
+            </div>
+
+            <div class="carteOutilEC">
+
+              <div class="outilsECPlusMoins">
+
+                <h3 class="titreOutilsEC"> Checklists </h3>
+                <div class="tagsOutilsEC">
+                  <div class="tagOEC variable">variable</div>
+                </div>
+
+                <div class="plusOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-plus-solid.svg"></img>
+
+                  • Ne nécessite aucune connaissance environnmentales préalable <br>
+                  • Peut facilement être pris en main <br>
+                  • Outils rapide d'aide à la décision <br><br>
+                </div>
+                <div class="moinsOEC">
+                  <img class="plusmoins" src="Ressources/svg/circle-minus-solid.svg"></img>
+
+                  • Recommandations génériques et non particularisées <br>
+                  • Ne permet pas d'écarter systématiquement d'éventuels effets rebonds <br>
+                </div>
+
+              </div>
+              <p class="dOEC">
+                Listes de questions qui ont pour but d’aider le concepteur à appréhender les impacts éventuels de son produit ou service aux différentes étapes de son cycle de vie et de prendre des décisions en conséquence. Certaines entreprises développent leurs propres check-lists en interne. Les plus connus sont la matrice TRIZ, la roue de Brezet ou encore l’eco-design pilot accessible en ligne.
+                              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="WrapperDoc legendeEcoC">
+          <p>
+            <span class="definition">Multi/monocritère :</span> prise en compte ou non de plusieurs critères environnementaux tels que les gaz à effet de serre, l'acidification des sols, l'eau, etc.<br><br>
+            <span class="definition">Multi/monophase :</span> prise en compte ou non de plusieurs phases du cycle de vie de la solution.
+          </p>
+
+        </div>
+
+
+        <div class="WrapperDoc">
+
+
+          <h2 class="titreBiblio"> Démarche d’éco-conception par Analyse de Cycle de Vie (ACV) </h2>
+          <div class="traitBiblio"> </div>
+
+        </div>
+
+
+
+
+
+          <input type="checkbox" id="checkboxImg2">
+
+            <label for="checkboxImg2">
+                  <img class="imgEcoC2" src="Ressources/ecoconception/ACV.png"></img>
+            </label>
+
+            <div class="ImgEcoWrap2">
+                    <img class="ImgEcoCzoom" src="Ressources/ecoconception/ACV.png" >
+            </div>
+
+
+        <div class="WrapperDoc">
+
+          <h2 class="titreBiblio"> Mise en pratique de <span class="insec">l'éco-conception</span> au sein d'une entreprise </h2>
+          <div class="traitBiblio"> </div>
+          <br><br>
+
+
+          <p>
+            Il existe donc un grand nombre d’outils pour mener des projets d’éco-conception. Les entreprises doivent néanmoins s’approprier ces outils pour aboutir à des solutions pertinentes.
+            <br><br>
+            Le pôle éco-conception préconise un déploiement en six étapes : <br>
+            <div class="bulletPoints">
+            • Cadrage de la démarche&nbsp;: dimensionner la démarche la plus adaptée à son entreprise
+            <br><br>
+            • Évaluation environnementale de la situation de référence
+            <br><br>
+            • Recherche des pistes d’éco-conception&nbsp;: trouver des solutions de réductions aux impacts identifiés
+            <br><br>
+            • Aide à la décision&nbsp;: hiérarchiser les pistes et identifier la plus favorable
+            <br><br>
+            • Évaluation environnementale comparative&nbsp;: comparaison avec la situation de référence pour valider la solution <span class="insec">«&#8239;éco-conçue&#8239;»</span>
+            <br><br>
+            • Communication environnementale <br>
+          </div>
+          </p>
+
+          <p>
+            <br><br>
+            Un certain nombre de normes sont aussi des supports de déploiement de l’éco-conception à un niveau plus global dans les entreprises :
+            <br><br>
+
+
+            <span class="definition dglossaire">ISO 14006 :</span> Systèmes de management environnemental - Lignes directrices pour intégrer l'éco-conception
+            <br><br>
+            <span class="definition dglossaire">ISO 14062 :</span> Management environnemental - Intégration des aspects environnementaux dans la conception et le développement de produit
+            <br><br>
+            <span class="definition dglossaire">NF X 30-264 :</span> Management environnemental - Aide à la mise en place d'une démarche d'éco-conception
+            <br><br>
+            Ces normes, ainsi qu’une dizaine d’autres normes sectorielles, n’ont pas de vocation de certification. Elles n’imposent pas non plus d’outils en particulier. Elles sont des guides de préconisation pour une mise en place rationnelle et la pérennisation d’une démarche d’éco-conception au sein des entreprises, quels que soient leur taille et leur domaine d’activité.
+            <br><br>
+
+            Il est néanmoins possible d’obtenir la certification <i>Afaq <span class="insec">éco-conception</span></i> délivrée par l’afnor. Celle-ci n’a pas pour but d’évaluer le ou les produits éco-conçus mais la crédibilité de la démarche mise en place au sein de l’entreprise.
+            <br><br>
+          </p>
+
+
+          <p>
+            <b>L’éco-conception est aujourd’hui un acte volontaire.</b> Certaines briques réglementaires apparaissent peu à peu sur des thématiques ciblés (réparabilité, durabilité) et dans des secteurs précis (électroménager).
+            <br><br>L’éco-conception en tant que démarche est mentionnée dans la loi anti-gaspillage pour une économie circulaire (AGEC)&nbsp;:<br> «&#8239;Les producteurs soumis aux filières pollueur-payeur devront élaborer tous les cinq ans un plan d’action de prévention et d’écoconception de leurs produits. Ceux-ci devront contenir plus de matière recyclée et être davantage recyclables. Ce plan sera révisé tous les cinq ans. Il pourra être individuel ou commun à plusieurs producteurs. Il comportera un bilan du plan précédent et définira des objectifs et des actions de prévention et d’écoconception. Ce seront les producteurs qui élaboreront ces plans et qui les transmettrons à l’éco-organisme. Une synthèse de ces plans sera accessible au public.&#8239;»
+            <br><br>
+
+
+            A noter aussi que la loi AGEC rendra également obligatoire l’enseignement de l’éco-conception dans les écoles nationales supérieures d’architectures.
+            <br><br><br><br>
+
+          </p>
+
+          <h2 class="titreBiblio"> Quelles conditions pour revendiquer un produit comme <span class="insec">éco-conçu ?</span> </h2>
+          <div class="traitBiblio"> </div>
+          <br><br>
+
+          <p>
+
+
+            D’après le <i><a class="lienBiblio" target="_blank" href="https://www.economie.gouv.fr/files/files/directions_services/cnc/Guide_allegat_environ_fr_2014.pdf">Guide pratique des allégations environnementales à l’usage des professionnels et des consommateurs</a></i> du ministère de l’économie, pour revendiquer qu’un produit est éco-conçu, il est nécessaire d’indiquer :
+            <br>
+
+            <div class="bulletPoints">
+              • Une définition de l’éco-conception (issue de la directive n°2009/125 ou de la norme ISO&nbsp;14&nbsp;062 relative à <span class="insec">l’éco-conception</span>)
+              <br><br>
+
+              • Des précisions sur ce qui est <span class="insec">éco-conçu&nbsp;:</span> le produit, l’emballage ou un composant. À défaut, ce terme vise le produit tel qu’il est commercialisé, c’est à-dire emballage compris
+              <br><br>
+
+              • Les principales caractéristiques environnementales du produit et/ou de son emballage
+               <br><br>
+              • La nature et si possible l’ampleur des réductions d’impacts environnementaux résultant de la démarche d’éco-conception (ces informations peuvent figurer sur un autre support approprié, comme un site internet).
+              <br><br>
+            </div>
+
+          </p>
+
+          <br><br>
+
+          <h2 class="titreBiblio">En bref</h2>
+          <div class="traitBiblio"> </div>
+          <br><br>
+
+
+
+          <p>
+            <b> Que permet <span class="insec">l’éco-conception&nbsp;:</span></b>
+            <br>
+            <div class="bulletPoints">
+              • Acquérir une connaissance solide de ses produits et procédés
+              <br><br>
+              • Identifier certains impacts
+              <br><br>
+              • Réduire une partie de ces impacts
+              <br><br>
+              • Eviter certains transferts de pollution et certaines fausses bonnes idées
+              <br><br>
+              • Intégrer davantage de transparence dans la conception
+              <br><br>
+              • Mettre en place un cadre rigoureux d’amélioration continue
+              <br><br>
+              • Amorcer un questionnement
+
+            </div>
+            <br><br>
+
+
+            <b> Que ne permet pas automatiquement <span class="insec">l’éco-conception&nbsp;:</span></b>
+            <br><br>
+            <div class="bulletPoints">
+              • Une compréhension locale de certains impacts, masqués par des données globales et standardisées
+              <br><br>
+              • Aller au-delà de la simple substitution d’un matériau par un autre
+              <br><br>
+              • Questionner le «&#8239;pourquoi&#8239;» du produit. La notion d’unité fonctionnelle amène à travailler à performance égale ou supérieure sans interroger la nécessité de la performance fixée
+              <br><br>
+              • Intégrer l’utilisateur final dans le processus de création
+              <br><br>
+              • Appréhender l’objet ou le service au sein d’un périmètre plus large : culturel, sociétal, économique
+            </div>
+            <br><br>
+
+          </p>
+
+          <b>L'éco-conception et le design&nbsp;?</b>
+          <br><br>
+
+          L’éco-conception est aujourd’hui un ensemble de méthodes créées par des ingénieurs, pour des ingénieurs. Elle impose une certaine rigueur qui ne laisse pas toujours la place à une grande créativité ni à la prise en compte des usages et usagers.
+          S’il n’est pas absurde d’envisager à terme des outils spécifiquement imaginé pour notre profession, le designer peut néanmoins s’approprier un nombre de ressources et intégrer certains réflexes à sa pratique&nbsp;:
+           <br><br>
+           <div class="bulletPoints">
+              • S’approprier certains outils accessibles (checklists, guidelines) <br>
+              <br>
+              • Enrichir ces méthodes d’un regard usages et utilisateur <br>
+              <br>
+              • Favoriser le réemploi <br>
+              <br>
+              • Apporter des preuves de concept et être force de proposition, montrer que l’on peut souvent faire différemment <br>
+              <br>
+              • Faire preuve de bon sens <br>
+
+            </div>
+
+          <br><br><br>
+
+
+          <b>Sources et ressources&nbsp;:</b>
+          <br><br>
+
+          <div class="eltBiblio"><a class="lienBiblio" target="_blank" href=" https://www.ademe.fr/">ADEME</a>.</div>
+                        <br>
+
+          <div class="eltBiblio"><a class="lienBiblio" target="_blank" href="https://www.eco-conception.fr">Pôle éco-conception</a>.</div>
+                        <br>
+
+          <div class="eltBiblio">BELLINI Béatrice, JANIN Marc, <i>Écoconception : état de l’art des outils disponibles</i>, Saint-Denis, Editions T.I., coll. «&nbsp;Techniques de l'ingénieur Environnement&nbsp;», 2019.</div>
+          <br>
+
+          <div class="eltBiblio">SOUAN Stéphanie, <i>Economie circulaire en pratique : explorer – concevoir</i>, Mémoire de fin d’étude sous la direction de Cloé Pitiot, Ensci - Les Ateliers, 2014.</div>
+          <br>
+
+          <div class="eltBiblio">MAKESENSE, GOBI, «&nbsp;Le changement par l'objet&nbsp;: éco-conception comment diminuer l'impact des biens de consommation&nbsp;?&nbsp;», visioconférence, 25/01/2022.</div>
+          <br>
+
+
+          <div class="eltBiblio"> CONSEIL NATIONAL DE LA CONSOMMATION <i><a class="lienBiblio" target="_blank" href="https://www.economie.gouv.fr/files/files/directions_services/cnc/Guide_allegat_environ_fr_2014.pdf">Guide pratique des allégations environnementales à l’usage des professionnels et des consommateurs</a></i>, Ministère de l'économie, Paris, 2014.</div>
+          <br>
+          <div class="eltBiblio"> <i><a class="lienBiblio" target="_blank" href="https://presse.ademe.fr/wp-content/uploads/2018/09/DP-Face-cache%CC%81e-des-biens-de%CC%81quipement-Septembre-2018.pdf">La face cachée des objets : vers une consommation responsable</a></i>, ADEME, 2018.</div>
+          <br>
+          <div class="eltBiblio"> <i><a class="lienBiblio" target="_blank" href="https://www.eco-conception.fr/data/sources/users/2242/guide-evaluation-eco-conceptionvfhd.pdf">Guide de l’évaluation AFAQ Éco-conception</a></i>, AFNOR, La Plaine Saint-Denis, 2019.</div>
+          <br>
+          <div class="eltBiblio"><i><a class="lienBiblio" target="_blank" href="https://www.halteobsolescence.org/wp-content/uploads/2022/02/Rapport-indice-de-reparabilite.pdf">The French repairability index - A first assessment – one year after its implementation</a></i>, HOP, Paris, 2022.</div>
+          <br>
+          <div class="eltBiblio"> <i>ISO 14062 - Intégration des aspects environnementaux dans la conception et le développement de produit</i>, AFNOR, La Plaine Saint-Denis, 2013.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN 45552 - Méthode générale pour l'évaluation de la durabilité des produits liés à l'énergie</i>, AFNOR, La Plaine Saint-Denis, 2020.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN 45554 - Méthodes générales pour l'évaluation de la capacité de réparation, réutilisation et amélioration des produits liés à l'énergie</i>, AFNOR, La Plaine Saint-Denis, 2020.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN IEC 62430 - Écoconception (ECO) - Principes, exigences</i>, AFNOR, La Plaine Saint-Denis, 2019.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14006 - Lignes directrices pour intégrer l'éco-conception</i>, AFNOR, La Plaine Saint-Denis, 2020.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14020 - Étiquettes et déclarations environnementales - Principes généraux</i>, AFNOR, La Plaine Saint-Denis, 2002.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14024 - Labels et déclarations environnementaux — Délivrance du label environnemental de type I — Principes et procédures</i>, AFNOR, La Plaine Saint-Denis, 2018.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14040  — Analyse du cycle de vie — Principes et cadre</i>, AFNOR, La Plaine Saint-Denis, 2006.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14044 — Analyse du cycle de vie — Exigences et lignes directrices</i>, AFNOR, La Plaine Saint-Denis, 2006.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14046 — Empreinte eau — Principes, exigences et lignes directrices</i>, AFNOR, La Plaine Saint-Denis, 2016.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF EN ISO 14067 — Empreinte carbone des produits — Exigences et lignes directrices pour la quantification</i>, AFNOR, La Plaine Saint-Denis, 2018.</div>
+          <br>
+          <div class="eltBiblio"> <i>NF X30-264 - Aide à la mise en place d'une démarche d'éco-conception</i>, AFNOR, La Plaine Saint-Denis, 2013.</div>
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+    <footer>
+
+          <div>©&nbsp;Donatien Lenoir</div>
+          <div> • </div>
+          <div>2022</div>
+          <div> • </div>
+          <div> <a class="lienFooter" href="https://www.ensci.com/" target="_blank">Ensci&nbsp;-&nbsp;Les&nbsp;Ateliers</a></div>
+
+        </footer>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script src="OmbreSticky.js"></script>
+      <script src="GestionDuMenu.js"></script>
+      <script src="GestionImgEcoC.js"></script>
+
+
+
+
+
+
+    </body>
+
+</html>

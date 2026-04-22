@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<!-- Ce site est codé de façon complètement artisanle et anarchique, de la grosse bidouille, du bon bricolage donc désolé à toi petit fouineur mais cela risque d'être compliqué de tout comprendre -->
+
+
+<html>
+  <head>
+    <link href="Style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Qu'est-ce qu'on fabrique&nbsp;? </title>
+    <meta name="description" content="Mémoire de fin d'études sous la direction de Bruno Tainturier • Ensci - Les Ateliers • 2022">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/png" href="Ressources/svg/favicon.svg">
+
+    <meta property="og:title" content="Qu'est-ce qu'on fabrique ?">
+    <meta property="og:image" content="https://questcequonfabrique.ensci.com/Ressources/img/GabaritBanniere.png">
+    <meta property="og:description" content="Mémoire de fin d'études sous la direction de Bruno Tainturier • Ensci - Les Ateliers • 2022">
+
+    <script type='text/javascript' >
+      let stateGlobal = ['off','off','off','off','off','off','off','off','off','off'];
+    </script>
+
+  </head>
+
+
+  <template>
+
+    <span><img id="photoPlayer" src=""></span>
+
+        <div id="WrapperTitreEpisode">
+          <span id="titreEpisode"> Titre de l'épisode </span>
+        </div>
+
+    <div id="audio-player-container">
+            <audio src="" preload="metadata" autoplay ></audio>
+            <button id="play-icon"><img id="boutonPlay" src="Ressources/svg/pause.svg"/></button>
+            <button id="retour10s"><img src="Ressources/svg/retour10s.svg"/></button>
+            <span id="current-time" class="time">0:00</span>
+            <input type="range" id="seek-slider" max="100" value="0">
+            <span id="duration" class="time">0:00</span>
+            <button class="boutonVolumeContainer"><img  id="boutonVolume" src="Ressources/svg/volume-low.svg" /></button>
+            <input type="range" id="volume-slider" max="100" value="100">
+    </div>
+
+
+  </template>
+
+
+
+
+  <header class="header">
+
+        <!-- MENU -->
+
+
+        <input type="checkbox" id="menu">
+          <label for="menu">
+            <div class="hide-des">
+
+              <img id="boutonMenu" src="Ressources/svg/bars-solid.svg"></img> <!--#######################-->
+
+
+            </div>
+
+          </label>
+          <div id="rectangleMenu"></div>
+          <div id="full-page"></div>
+          <div id="menuPlayer" class="menu">
+            <div class="menuContainer">
+                <ul class="bold-text">
+
+                  <li class="LienSommaire"><a href="index.html#WrapperSommaire">Sommaire</a></li>
+                  <li class="LienSommaire"><a href="index.html#preambule">Point de départ</a></li><br>
+                  <li class="LienSommaire"><a href="episodes.html">Les épisodes</a></li><br>
+                  <ul>
+                      <li class="LienSommaire"><a id="lien1" href="episodes.html#mu">Faire les bons choix grâce à <span class="insec">l’éco-conception</span></a></li>
+                      <li class="LienSommaire"><a id="lien2" href="episodes.html#renz">L’exemplarité écologique face aux lois du marché</a></li>
+                      <li class="LienSommaire"><a id="lien3" href="episodes.html#slean">L’indépendance par l’entreprenariat</a></li>
+                      <li class="LienSommaire"><a id="lien4" href="episodes.html#ateliertac">L’éco-conception «&#8239;artisanale&#8239;» par le réemploi</a></li>
+                      <li class="LienSommaire"><a id="lien5" href="episodes.html#ratp">Un projet d’entreprise qui a du sens</a></li>
+                      <li class="LienSommaire"><a id="lien6" href="episodes.html#commown">L’entreprise militante</a> </li>
+                      <li class="LienSommaire"><a id="lien7" href="episodes.html#camif">L’entreprise comme levier d’action</a></li>
+                      <li class="LienSommaire"><a id="lien8" href="episodes.html#lowtechlab">Repenser la société par la <span class="insec">low-tech</span></a></li><br>
+                      <li class="LienSommaire"><a id="lien9" href="episodes.html#episode9">Et maintenant&#8239;? Qu'est-ce qu'on fabrique&#8239;?</a></li><br>
+                  </ul>
+
+
+                  <li class="LienSommaire"><a href="ecoconception.html">Synthèse sur <span class="insec">l'éco-conception</span></a></li>
+                  <br>
+                  <li class="LienSommaire"><a href="ressources.html">Ressources</a></li>
+                  <br>
+                  <li class="LienSommaire"><a id="paddingPlayer" class="LastOfType" href="remerciements.html">Remerciements</a></li>
+                  <br>
+              </div>
+
+
+            </ul>
+          </div>
+
+
+    <span>
+      <h1 class="TitreMemoire"> Qu'est-ce qu'on fabrique&nbsp;? </h1>
+    </span>
+
+
+
+  </header>
+
+  <body>
+
+    <div id="playerPrincipalContainer">
+
+        <audio-player id="playerPrincipal" class="playerEpisode"  ></audio-player>
+
+
+    </div>
+
+
+
+    <button id="bouton1" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton2" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton3" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton4" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton5" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton6" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton7" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton8" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+    <button id="bouton9" class="boutonsPlay boutonCaché" ><img class="boutonPlayImage" src="Ressources/svg/play-clair.svg" /></button>
+
+
+
+    <div id="WrapperGeneral">
+
+      <!-- <div id="remerciements" class="WrapperContenu"> -->
+
+
+        <div class="WrapperDoc">
+          <h1 class="sommaire"> Remerciements </h1>
+          <div class="trait"></div><br>
+
+
+          <br><br>
+
+
+
+
+
+      Je tiens à remercier l’ensemble des personnes qui m’ont permis de réaliser ce mémoire, que ce soit durant ces six mois ou plus tôt au cours de <span style="text-decoration: line-through;">mon parcours</span> ma vie.
+
+      <br><br><br><br>
+
+      Je tiens notamment à remercier&nbsp;: <br><br>
+
+<span class="eltRemerciement">Bruno</span> pour ton accompagnement sans faille, ta patience et ton écoute, tes conseils justes et le temps que tu m’as offert.
+<br><br>
+<span class="eltRemerciement">Edith</span> pour ton suivi attentif durant toute la construction de mon projet.
+<br><br>
+<span class="eltRemerciement">Mes</span> parents et mes sœurs qui ont grandement contribué à donner qui je suis aujourd’hui.
+<br><br>
+<span class="eltRemerciement">Margot,</span> Thierry, Nathanaël, Florian, Stéphanie, Adrien, Emery, Quentin ainsi que Fabien et Pascal d’avoir accepté de jouer le jeu de l’entretien dans des conditions et des périodes pas toujours évidentes. Vous formez désormais le corps de mon mémoire, et je vous en remercie.
+<br><br>
+<span class="eltRemerciement">Solenn</span> pour tes illustrations qui ont su donner de la couleur et des sourires à mon mémoire.
+<br><br>
+<span class="eltRemerciement">Charlötte,</span> ton sens du rythme a su égayer et dynamiser ma production -&nbsp;<button id="bouton10" class="boutonsPlay boutonRemerciement"><span class="boutonPlayImage" src="Ressources/svg/play-clair.svg"></span>la piste intégrale du thème « Qu’est-ce qu’on fabrique ? » en bonus</button>&nbsp;-
+<br><br>
+<span class="eltRemerciement">Clément,</span> Maïlys, Jérome, Simon et Victor pour votre participation à la rédaction et à l’enregistrement de mon épisode de conclusion.
+<br><br>
+<span class="eltRemerciement">Arno,</span> Guillaume et Moaad, vos conseils m’ont débloqué et m’ont permis de finir patiemment le développement de mon site.
+<br><br>
+<span class="eltRemerciement">Roland</span> pour tes bons conseils et tes retours.
+<br><br>
+<span class="eltRemerciement">Brice</span> pour avoir été mon compagnon de route de la phase diplôme.
+<br><br>
+<span class="eltRemerciement">Eva</span> pour ton écoute attentive de mes épisodes et de mes mauvaises blagues.
+<br><br>
+<span class="eltRemerciement">Kim,</span> Cotti et Yves et les camarades du bocal de m’avoir supporté jusqu’au bout et dans les deux sens du terme.
+<br><br>
+<span class="eltRemerciement">Ainsi</span> que toutes les personnes qui m’ont accordé du temps pour répondre à mes questions, dont Marie, David et François.
+<br><br>
+<br><br>
+Puis toutes celles que j’oublie, les amis, la famille, toi qui lis ces lignes, encore merci !
+<br><br><br><br>
+
+
+
+      </div>
+
+
+      </div>
+
+    <footer>
+
+          <div>©&nbsp;Donatien Lenoir</div>
+          <div> • </div>
+          <div>2022</div>
+          <div> • </div>
+          <div> <a class="lienFooter" href="https://www.ensci.com/" target="_blank">Ensci&nbsp;-&nbsp;Les&nbsp;Ateliers</a></div>
+
+        </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="ApparitionDisparitionPlayerEtChapitrage.js"></script>
+    <script src="AudioControlPlayerUniqueChap.js"></script>
+    <script src="OmbreSticky.js"></script>
+    <script src="GestionDuMenu.js"></script>
+
+
+
+
+
+  </body>
+
+</html>
